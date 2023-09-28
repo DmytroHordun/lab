@@ -1,0 +1,123 @@
+@media (max-width: 768px) {
+    /* Стилі для мобільних пристроїв */
+}
+  
+@media (min-width: 769px) {
+    /* Стилі для десктопних пристроїв */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.slider {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    grid-column: span 3;
+}
+
+.news {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news ul li {
+    margin-bottom: 10px;
+}
+
+.news ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.about {
+    background-color: #f5f5f5;
+    padding: 20px;
+    grid-column: span 3;
+}
+
+footer {
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #2228da;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.contact-icons a:hover {
+    color: #ff4500;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 12px solid #cfd8dc;
+    border-top-color: #3fb590;
+    border-bottom-color: #3fb590;;
+    animation: 1s spin infinite ease-in-out;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
