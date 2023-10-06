@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="path/to/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="registration-form">
+                    <h2>Реєстрація</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" class="form-control" id="email" placeholder="Введіть адресу" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль: </label>
+                            <input type="password" class="form-control" id="password" placeholder="Введіть пароль" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Прізвище: </label>
+                            <input type="surname" class="form-control" id="surname" placeholder="Введіть прізвище користувача" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Ім'я користувача: </label>
+                            <input type="text" class="form-control" id="name" placeholder="Введіть ім'я користувача" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="datebirth">Дата народження: </label>
+                            <input type="datebirth" class="form-control" id="datebirth" placeholder="Введіть дату народження" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="groupSelect">Выберіть группу: </label>
+                            <select class="form-control" id="groupSelect" name="group">
+                                <option value="group1">Не визначено</option>
+                                <option value="group1">ІА-21</option>
+                                <option value="group2">ІА-22</option>
+                                <option value="group3">ІА-23</option>
+                                <option value="group3">ІА-24</option>
+                            </select>
+                        </div>
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="fileInput">Виберіть файл для завантаження:</label>
+                                <input type="file" class="form-control-file"    id="fileInput" name="fileToUpload">
+                                <button type="submit">Завантажити файл</button>
+                            </div>
+                            <div>
+
+                            </div>
+                        </form>
+
+
+
+                        <button type="submit" class="btn btn-primary btn-register">Зареєструватися</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

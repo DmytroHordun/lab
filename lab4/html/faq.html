@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Часті питання (FAQ)</h1>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faqHeading1">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            Питання 1: Як додати новий об'єкт до колекції?
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Для додавання нового об'єкта до колекції перейдіть до секції "Управління колекцією" і натисніть кнопку "Додати новий об'єкт". Заповніть всі необхідні дані та збережіть зміни.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading2">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            Питання 2: Як створити новий звіт про продажі?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Для створення нового звіту про продажі перейдіть до секції "Фінансові операції" і виберіть опцію "Створити новий звіт". Вкажіть всі деталі та збережіть звіт.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading3">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            Питання 3: Як надати доступ іншим користувачам до колекції?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Для надання доступу іншим користувачам до колекції перейдіть до секції "Управління користувачами" і виберіть опцію "Надати доступ". Вкажіть користувачів, яким ви хочете надати доступ, та встановіть права доступу.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="faqHeading4">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            Питання 4: Як видалити об'єкт з колекції?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Для видалення об'єкта з колекції перейдіть до секції "Управління колекцією" і виберіть опцію "Видалити об'єкт". Виберіть об'єкт, який ви хочете видалити, та підтвердіть дію.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
